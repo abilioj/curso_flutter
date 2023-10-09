@@ -22,4 +22,28 @@ void main(List<String> args) {
   }
 
   print("\n" + nomes[2]);
+  print('\n------------------------------------------------------');
+
+// conjunto de numeros
+  Set<int> consunto = {0, 1, 2, 3, 4, 5};
+  print(consunto.length);
+  print(consunto is Set);
+
+// lista de notas
+  Map<String, double> notasDasLinguagemProAJ = {
+    'java': 6.5,
+    'php': 9.0,
+    'dart': 0.5,
+    "javaScripit": 9.0
+  };
+
+//   for (var key in notasDasLinguagemProAJ.keys) {
+//     print("chave = " + key);
+//   }
+//   for (var valor in notasDasLinguagemProAJ.values) {
+//     print("valor = $valor");
+//   }
+  for (var registro in notasDasLinguagemProAJ.entries) {
+    print("${registro.key} = ${registro.value}");
+  }
 }
