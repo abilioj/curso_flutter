@@ -12,7 +12,22 @@ class PerguntaApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Perguntas'),
         ),
-        body: const Text('Olá Flutter!'),
+        body: ListView(
+          children: <Widget>[
+            ListTile(
+              leading: Icon(Icons.map),
+              title: Text('Mapa'),
+            ),
+            ListTile(
+              leading: Icon(Icons.photo_album),
+              title: Text('Album'),
+            ),
+            ListTile(
+              leading: Icon(Icons.phone),
+              title: Text('Fone'),
+            ),
+          ],
+        ),
       ),
     );
   }
